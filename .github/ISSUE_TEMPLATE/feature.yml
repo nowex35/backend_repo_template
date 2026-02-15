@@ -1,0 +1,36 @@
+name: 機能追加
+description: 機能追加に関する情報を記述してください
+title: "[feature]: "
+labels: ["enhancement", "議論"]
+assignees:
+  - octocat
+body:
+  - type: markdown
+    attributes:
+      value: |
+        機能追加に関する情報をできるだけ詳細に記述してください。
+  - type: textarea
+    id: summary
+    attributes:
+      label: 機能の概要
+      description: 提案する機能を簡潔に説明してください。
+      placeholder: 例) ダークモードを追加
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 優先度
+      description: この機能の重要度を教えてください。
+      options:
+        - 低
+        - 中
+        - 高
+        - 緊急
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 追加の情報
+      description: その他の詳細やスクリーンショットがあれば記入してください。

@@ -1,0 +1,34 @@
+{
+    "permissions": {
+        "allow": [
+            "Bash(npm run test:*)",
+            "Bash(npm run lint:*)",
+            "mcp__serena",
+            "mcp__chrome-devtools",
+            "mcp__ide__getDiagnostics"
+        ],
+        "deny": [
+            "Read(.env)",
+            "Read(.env.*)",
+            "Edit(.env)",
+            "Edit(.env.*)",
+            "Write(.env)",
+            "Write(.env.*)",
+            "Grep(.env*)",
+            "Serena - replace_symbol_body"
+        ],
+        "ask": []
+    },
+    "hooks": {
+        "SessionStart": [
+            {
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "echo \"# currentDate\nToday's date is $(date '+%Y-%m-%d').\""
+                    }
+                ]
+            }
+        ]
+    }
+}

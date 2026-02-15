@@ -1,0 +1,32 @@
+name: バージョンアップデート
+description: 今回のバージョンに関する情報を記述してください
+title: "[vX.x]: "
+labels: ["enhancement", "議論"]
+assignees:
+  - octocat
+body:
+  - type: markdown
+    attributes:
+      value: |
+        今回のバージョンに関する情報をできるだけ詳細に記述してください。
+  - type: input
+    id: summary
+    attributes:
+      label: バージョンの概要
+      description: 今回のバージョン変更内容を簡潔に説明してください。
+      placeholder: 例) ダークモードを追加、バグ修正、機能追加など
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: バージョンの詳細
+      description: 今回のバージョンに含まれる変更点を細かく説明してください。
+      placeholder: 例) ダークモードを追加. 設定画面でダークモードのトグルスイッチを追加しました.
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 追加の情報
+      description: その他の詳細やスクリーンショットがあれば記入してください。
